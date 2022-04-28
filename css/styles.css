@@ -1,0 +1,156 @@
+body{
+  top:0;
+  left:0;
+
+}
+.header_bar{
+  background-color:#357C3C;
+}
+.outer-container{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+  margin: 20px auto;
+}
+.image-container{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: purple;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.title-logo{
+  width:120px;
+  height:120px;
+}
+.outer-container, .image-container, .title-logo{
+  border-radius: 50%;
+}
+.text{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText{
+  0%{
+    transform: rotate(-360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.text span{
+  position: absolute;
+  left: 50%;
+  top:0;
+  transform-origin: 0 100px;
+}
+.two{
+  display:flex;
+  flex-direction:column;
+
+}
+.button_design{
+  width: 100px;
+  height: 30px;
+  background-color:#4E944F;
+  color: #fff;
+  margin:5px;
+  border-radius: 5px;
+  list-style-type:none;
+}
+
+button:hover{
+  opacity:50%;
+}
+.listItem{
+  list-style-type: none;
+  display:flex;
+ flex-flow:row wrap;
+
+}
+
+.content_container{
+
+  background-color:#E4E9BE;
+  padding-top:20px;
+
+
+}
+#modal-container{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.8);
+display:grid;
+text-align:center;
+}
+#modal-container{
+  display:none;
+}
+.modal{
+  position:relative;
+  top:10%;
+  left:10%;
+  background-color:#125B50;
+  max-width:700px;
+  height:200px;
+  display:block;
+border-radius:5px;
+}
+
+.close-button{
+  position:absolute;
+ top:3px;
+ left:3px;
+  padding:3px;
+  border-radius:5px;
+  cursor:pointer;
+  background-color:#446A46;
+  color:#fff;
+}
+img{
+  height:100px;
+  width:150px;
+  margin:5px;
+}
+.poke1, .poke2{
+  margin-left:10%;
+}
+.search_field{
+  width:30%;
+  margin-left:60%;
+}
+.magnifying_kit{
+  margin: 5px;
+  padding: 5px;
+}
+@media (max-width:850px){
+  .modal{
+    width:430px;
+    top:10%;
+    left:7%;
+  }
+  .one{
+    padding-left:40px;
+  }
+  .poke1{
+    margin-left:50%;
+    transform:rotate(25deg);
+  }
+  .poke2{
+  margin-left:30%;
+  }
+  .search_field{
+    width:50%;
+    margin-left:45%;
+  }
+}
