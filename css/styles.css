@@ -143,14 +143,11 @@ img{
     padding-left:40px;
   }
   .poke1{
-    margin-left:50%;
+    margin-left:65%;
     transform:rotate(25deg);
   }
   .poke2{
-  margin-left:30%;
+  margin-left:35%;
   }
-  .search_field{
-    width:50%;
-    margin-left:45%;
-  }
+  
 }
