@@ -122,6 +122,10 @@ img{
   width:150px;
   margin:5px;
 }
+.myPoke{
+  height: 110px;
+  width: 150px;
+}
 .poke1, .poke2{
   margin-left:10%;
 }

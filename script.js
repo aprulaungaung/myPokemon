@@ -52,7 +52,7 @@ let pokemonRepository = (function() {
     $("h4").text(pokemon.name);
     $(".modal").append("<img class='myPoke'>");
     $(".myPoke").attr("src",pokemon.imageUrl);
-    $("img").addClass("img");
+    $(".myPoke").addClass("myPoke");
     $(".modal").append("<p class='p2'></p>");
     $(".p2").text("height :" + pokemon.height);
     $("#modal-container").show();
